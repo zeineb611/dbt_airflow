@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: landing_zone
+    database: OPPORTUNITY
+    schema: LANDING_ZONE
+    tables:
+      - name: data
+        description: "Raw data table in landing zone"

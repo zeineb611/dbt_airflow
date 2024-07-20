@@ -1,0 +1,14 @@
+
+cosmosproject:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: si31446.uk-south.azure
+      user: younsizeineb
+      password: 'Zouba123'
+      role: dbt_role
+      database: opportunity
+      warehouse: load_data1
+      authenticator: 'externalbrowser'
+

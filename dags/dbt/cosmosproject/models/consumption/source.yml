@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: curated_zone
+    database: OPPORTUNITY
+    schema: curated_zone
+    tables:
+      - name: opportunity
+        description: "Raw data table in landing zone"

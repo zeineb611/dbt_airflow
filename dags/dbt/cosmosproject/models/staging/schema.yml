@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: data_curated
+    description: "Model for curated data"
+
+ 
+  - name: Opportunity
+    description: "data without duplication "

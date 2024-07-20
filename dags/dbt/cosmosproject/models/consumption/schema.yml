@@ -1,0 +1,63 @@
+version: 2
+
+models:
+  - name: dim_client
+    description: "Model for dimension table of clients"
+    columns:
+    - name : clientID
+      description : "surregate key"
+      tests:
+         - unique
+         - not_null
+        
+  
+  - name: dim_employee
+    description: "Model for dimension table of employees"
+    columns:
+    - name : employeeID
+      description : "surregate key"
+      tests:
+         - unique
+         - not_null
+        
+
+
+  
+  
+  
+  - name: dim_geographic
+    description: "Model for dimension table of geographic"
+    columns:
+    - name : geographicID
+      description : "surregate key"
+      tests:
+         - unique
+         - not_null
+        
+
+
+
+  - name: dim_opportunity
+    description: "Model for dimension table of opportunities"
+    columns:
+    - name : opportunityID
+      description : "surregate key"
+      tests:
+         - unique
+         - not_null
+
+  
+  - name: fact_opportunities
+    description: "Model for dimension table of opportunities"
+    columns:
+    - name : fact_id
+      description : "surregate key"
+      tests:
+         - unique
+         - not_null
+
+   
+
+
+
+

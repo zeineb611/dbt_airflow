@@ -1,0 +1,12 @@
+# tests/data_quality.yml
+version: 2
+
+tests:
+  - name: check_for_duplicates
+    description: Ensure no duplicates exist based on OPPORTUNITY_ID
+    severity: error
+    SQL: >
+      SELECT OPPORTUNITY_ID, COUNT(*)
+      FROM {{ ref('data_curated') }}
+      GROUP BY OPPORTUNITY_ID
+      HAVING COUNT(*) > 1;
